@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>华尔街投资体验 | Cool Sir Edulife Academy</title>
+<meta name="description" content="体验真实投资决策过程，认识美股市场运作逻辑，开启你的投资学习之旅。">
+
+<!-- Open Graph -->
+<meta property="og:title" content="华尔街投资体验 | Cool Sir Edulife Academy">
+<meta property="og:description" content="体验真实投资决策过程，认识美股市场运作逻辑，开启你的投资学习之旅。">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/og-cover.jpg">
+<meta property="og:locale" content="zh_TW">
+<meta property="og:site_name" content="Cool Sir Edulife Academy">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="华尔街投资体验 | Cool Sir Edulife Academy">
+<meta name="twitter:description" content="体验真实投资决策过程，认识美股市场运作逻辑，开启你的投资学习之旅。">
+
+<link rel="icon" type="image/jpeg" href="assets/logo.jpeg">
+
+<!-- Preconnect for font performance -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Noto+Serif+TC:wght@700;900&family=Inter:wght@400;500;600;700&family=Noto+Sans+TC:wght@400;500;700&family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ============================================================
+     Ticker strip — signature "Wall Street" motif
+     ============================================================ -->
+<div class="ticker" aria-hidden="true">
+  <div class="ticker__track">
+    <span class="ticker__item">S&amp;P 500 <span class="up">▲ 10.2%</span> 年化回报<span class="ticker__dot">·</span></span>
+    <span class="ticker__item">美股交易时段 <span class="up">21:30 – 04:00</span>（马来西亚时间）<span class="ticker__dot">·</span></span>
+    <span class="ticker__item">下一场分享会 <span class="up">15 / 08 / 2026</span><span class="ticker__dot">·</span></span>
+    <span class="ticker__item">选择权收租策略 <span class="up">现场模拟体验</span><span class="ticker__dot">·</span></span>
+    <span class="ticker__item">名额有限 <span class="down">即将满额</span><span class="ticker__dot">·</span></span>
+    <!-- duplicate set for seamless loop -->
+    <span class="ticker__item">S&amp;P 500 <span class="up">▲ 10.2%</span> 年化回报<span class="ticker__dot">·</span></span>
+    <span class="ticker__item">美股交易时段 <span class="up">21:30 – 04:00</span>（马来西亚时间）<span class="ticker__dot">·</span></span>
+    <span class="ticker__item">下一场分享会 <span class="up">15 / 08 / 2026</span><span class="ticker__dot">·</span></span>
+    <span class="ticker__item">选择权收租策略 <span class="up">现场模拟体验</span><span class="ticker__dot">·</span></span>
+    <span class="ticker__item">名额有限 <span class="down">即将满额</span><span class="ticker__dot">·</span></span>
+  </div>
+</div>
+
+<!-- ============================================================
+     Navbar
+     ============================================================ -->
+<header class="navbar">
+  <div class="navbar__inner">
+    <div class="navbar__brand">
+      <img src="assets/logo.jpeg" alt="Cool Sir Edulife Academy logo" class="navbar__logo" id="brandLogo">
+      <div class="navbar__name">
+        Cool Sir Edulife Academy
+        <span>财经投资教育</span>
+      </div>
+    </div>
+    <button class="navbar__cta" id="navCta" type="button">
+      <span class="full">立即报名</span>
+      <span class="short" aria-hidden="true">报名</span>
+    </button>
+  </div>
+</header>
+
+<!-- ============================================================
+     Hero
+     ============================================================ -->
+<section class="hero" id="hero">
+  <div class="hero__glow" aria-hidden="true"></div>
+
+  <!-- Skyline + candlestick signature illustration -->
+  <svg class="hero__skyline" viewBox="0 0 1440 360" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+    <defs>
+      <linearGradient id="skylineFade" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#1B3A66" stop-opacity="0.0"/>
+        <stop offset="100%" stop-color="#1B3A66" stop-opacity="0.9"/>
+      </linearGradient>
+    </defs>
+    <!-- back row of buildings -->
+    <g fill="#15315A" opacity="0.65">
+      <rect x="20" y="180" width="60" height="180"/>
+      <rect x="95" y="150" width="44" height="210"/>
+      <rect x="150" y="200" width="70" height="160"/>
+      <rect x="240" y="120" width="50" height="240"/>
+      <rect x="310" y="170" width="60" height="190"/>
+      <rect x="400" y="140" width="46" height="220"/>
+      <rect x="470" y="190" width="64" height="170"/>
+      <rect x="560" y="110" width="52" height="250"/>
+      <rect x="640" y="160" width="58" height="200"/>
+      <rect x="720" y="130" width="48" height="230"/>
+      <rect x="800" y="175" width="62" height="185"/>
+      <rect x="880" y="145" width="50" height="215"/>
+      <rect x="950" y="195" width="66" height="165"/>
+      <rect x="1040" y="125" width="52" height="235"/>
+      <rect x="1115" y="165" width="58" height="195"/>
+      <rect x="1195" y="140" width="48" height="220"/>
+      <rect x="1265" y="185" width="64" height="175"/>
+      <rect x="1350" y="155" width="50" height="205"/>
+    </g>
+    <!-- front row, taller, with antenna spires -->
+    <g fill="#0F2545">
+      <rect x="60" y="100" width="58" height="260"/>
+      <rect x="170" y="60" width="42" height="300"/>
+      <rect x="260" y="130" width="66" height="230"/>
+      <rect x="360" y="40" width="38" height="320"/>
+      <rect x="440" y="90" width="60" height="270"/>
+      <rect x="540" y="55" width="44" height="305"/>
+      <rect x="630" y="115" width="70" height="245"/>
+      <rect x="730" y="70" width="46" height="290"/>
+      <rect x="810" y="100" width="58" height="260"/>
+      <rect x="900" y="50" width="40" height="310"/>
+      <rect x="970" y="120" width="64" height="240"/>
+      <rect x="1070" y="75" width="48" height="285"/>
+      <rect x="1150" y="105" width="56" height="255"/>
+      <rect x="1240" y="60" width="40" height="300"/>
+      <rect x="1310" y="115" width="62" height="245"/>
+      <rect x="1390" y="85" width="36" height="275"/>
+      <line x1="378" y1="40" x2="378" y2="6" stroke="#0F2545" stroke-width="3"/>
+      <line x1="920" y1="50" x2="920" y2="16" stroke="#0F2545" stroke-width="3"/>
+    </g>
+    <!-- candlestick chart line forming part of the ridge — signature motif -->
+    <g stroke="#C9A24B" stroke-width="2.5" opacity="0.85" fill="none" stroke-linecap="round">
+      <polyline points="40,300 140,260 240,275 340,200 440,225 540,150 640,185 740,120 840,160 940,95 1040,140 1140,80 1240,130 1340,70 1400,100" />
+    </g>
+    <g fill="#E3CC8E" opacity="0.9">
+      <rect x="135" y="252" width="10" height="16" rx="1"/>
+      <rect x="335" y="192" width="10" height="16" rx="1"/>
+      <rect x="535" y="142" width="10" height="16" rx="1"/>
+      <rect x="735" y="112" width="10" height="16" rx="1"/>
+      <rect x="935" y="87" width="10" height="16" rx="1"/>
+      <rect x="1135" y="72" width="10" height="16" rx="1"/>
+      <rect x="1335" y="62" width="10" height="16" rx="1"/>
+    </g>
+    <rect x="0" y="0" width="1440" height="360" fill="url(#skylineFade)"/>
+  </svg>
+
+  <div class="hero__inner">
+    <span class="hero__eyebrow">COOL SIR EDULIFE ACADEMY · 限额招生</span>
+
+    <h1 class="hero__headline">华尔街投资体验</h1>
+
+    <p class="hero__subtitle">体验真实投资决策过程，认识美股市场运作逻辑，开启你的投资学习之旅。</p>
+
+    <div class="hero__details">
+      <span class="hero__chip">📅 <strong>15 / 08 / 2026</strong>（星期六）</span>
+      <span class="hero__chip">🕑 <strong>2:30PM – 4:30PM</strong></span>
+      <span class="hero__chip">📍 <strong>YMCA, Penang</strong></span>
+    </div>
+
+    <div class="hero__cta-wrap">
+      <button class="btn-primary" id="heroCta" type="button">
+        立即报名
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg>
+      </button>
+    </div>
+    <p class="hero__note">名额有限，建议尽早预留席位</p>
+  </div>
+
+  <div class="hero__floats" aria-hidden="true">
+    <div class="float-card">
+      <div class="float-card__value">10.2<span class="unit">% 年化</span></div>
+      <div class="float-card__label">S&amp;P 500 指数过去 30 年平均年化回报</div>
+    </div>
+    <div class="float-card">
+      <div class="float-card__value">9:30<span class="unit">PM 开盘</span></div>
+      <div class="float-card__label">美股交易时间（马来西亚时区）</div>
+    </div>
+    <div class="float-card">
+      <div class="float-card__value">2<span class="unit">小时</span></div>
+      <div class="float-card__label">沉浸式模拟体验，从选股到收租策略</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     About / Why attend
+     ============================================================ -->
+<section class="about" id="about">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="section-head__eyebrow">WHY JOIN US</span>
+      <h2 class="section-head__title">为什么参加这场分享会？</h2>
+    </div>
+
+    <div class="about__grid reveal-stagger">
+      <div class="feature-card">
+        <div class="feature-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 14l4-4 3 3 5-6"/></svg>
+        </div>
+        <div class="feature-card__title">认识美股市场的基本结构与特点</div>
+        <div class="feature-card__desc">了解交易时间、主要指数与市场运作方式，建立扎实的基础认知。</div>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 3"/></svg>
+        </div>
+        <div class="feature-card__title">为什么越来越多投资者选择美国市场</div>
+        <div class="feature-card__desc">解析全球资金流向与美股的长期吸引力，看清趋势背后的逻辑。</div>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
+        </div>
+        <div class="feature-card__title">亲身进入「选股 + 选择权收租」模拟体验</div>
+        <div class="feature-card__desc">透过实战式情境，理解策略组合如何在真实市场中运作。</div>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+        </div>
+        <div class="feature-card__title">通过游戏式模拟，体验真实投资决策过程</div>
+        <div class="feature-card__desc">用互动方式取代死板讲课，让抽象概念变得直观易懂。</div>
+      </div>
+
+      <div class="feature-card">
+        <div class="feature-card__icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4.5 8-11V5l-8-3-8 3v6c0 6.5 8 11 8 11z"/></svg>
+        </div>
+        <div class="feature-card__title">建立正确的投资观念，理解风险与回报</div>
+        <div class="feature-card__desc">从心态到方法，打造长期、稳健的投资思维基础。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     Experience section
+     ============================================================ -->
+<section class="experience" id="experience-section">
+  <div class="container experience__layout">
+    <div class="experience__copy reveal">
+      <div class="section-head">
+        <span class="section-head__eyebrow">IMMERSIVE LEARNING</span>
+        <h2 class="section-head__title section-head__title--light">沉浸式投资体验</h2>
+      </div>
+      <p class="experience__lead">不是传统讲课模式。参与者将通过互动模拟体验，让投资学习更容易理解。</p>
+
+      <div class="experience__list">
+        <div class="experience__item">
+          <div class="experience__item-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M18 17V9"/><path d="M13 17V5"/><path d="M8 17v-3"/></svg>
+          </div>
+          <div class="experience__item-text">选股思维</div>
+        </div>
+        <div class="experience__item">
+          <div class="experience__item-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"/><line x1="12" y1="9" x2="12" y2="13"/><line x1="12" y1="17" x2="12.01" y2="17"/></svg>
+          </div>
+          <div class="experience__item-text">风险评估</div>
+        </div>
+        <div class="experience__item">
+          <div class="experience__item-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M16 8h-6a2 2 0 1 0 0 4h4a2 2 0 1 1 0 4H8"/><line x1="12" y1="6" x2="12" y2="18"/></svg>
+          </div>
+          <div class="experience__item-text">收益规划</div>
+        </div>
+        <div class="experience__item">
+          <div class="experience__item-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+          </div>
+          <div class="experience__item-text">投资决策过程</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="experience__visual reveal">
+      <div class="sim-panel" id="simPanel">
+        <div class="sim-panel__header">
+          <span class="sim-panel__title">模拟交易面板 · LIVE SIM</span>
+          <span class="sim-panel__badge">进行中</span>
+        </div>
+        <div class="sim-chart" aria-hidden="true">
+          <div class="sim-bar" style="height: 38%;"></div>
+          <div class="sim-bar" style="height: 55%;"></div>
+          <div class="sim-bar" style="height: 30%;"></div>
+          <div class="sim-bar" style="height: 70%;"></div>
+          <div class="sim-bar" style="height: 48%;"></div>
+          <div class="sim-bar" style="height: 85%;"></div>
+          <div class="sim-bar" style="height: 62%;"></div>
+          <div class="sim-bar" style="height: 95%;"></div>
+          <div class="sim-bar" style="height: 75%;"></div>
+          <div class="sim-bar" style="height: 100%;"></div>
+        </div>
+        <div class="sim-rows">
+          <div class="sim-row">
+            <div>
+              <div class="sim-row__name">AAPL · 选股策略</div>
+              <div class="sim-row__sub">模拟持仓 · 科技板块</div>
+            </div>
+            <div class="sim-row__value"><span class="pct up">▲ 4.8%</span></div>
+          </div>
+          <div class="sim-row">
+            <div>
+              <div class="sim-row__name">Covered Call · 收租策略</div>
+              <div class="sim-row__sub">选择权权利金收入</div>
+            </div>
+            <div class="sim-row__value"><span class="pct up">▲ 1.2%</span></div>
+          </div>
+          <div class="sim-row">
+            <div>
+              <div class="sim-row__name">风险控管</div>
+              <div class="sim-row__sub">模拟止损情境演练</div>
+            </div>
+            <div class="sim-row__value"><span class="pct down">－0.6%</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     Registration form
+     ============================================================ -->
+<section class="register" id="register">
+  <div class="container register__layout">
+    <div class="section-head reveal">
+      <span class="section-head__eyebrow">RESERVE YOUR SEAT</span>
+      <h2 class="section-head__title">立即预留席位</h2>
+    </div>
+
+    <div class="register__card reveal">
+      <form id="registrationForm" novalidate>
+        <div class="form-grid">
+          <div class="form-field form-field--full">
+            <label for="name">姓名<span class="req">*</span></label>
+            <input type="text" id="name" name="name" autocomplete="name" placeholder="请输入您的姓名" required>
+            <span class="field-error" id="error-name">请输入您的姓名</span>
+          </div>
+
+          <div class="form-field">
+            <label for="whatsapp">Whatsapp 号码<span class="req">*</span></label>
+            <input type="tel" id="whatsapp" name="whatsapp" autocomplete="tel" placeholder="例：012-3456789" required>
+            <span class="field-error" id="error-whatsapp">请输入有效的 Whatsapp 号码</span>
+          </div>
+
+          <div class="form-field">
+            <label for="email">Email<span class="req">*</span></label>
+            <input type="email" id="email" name="email" autocomplete="email" placeholder="example@email.com" required>
+            <span class="field-error" id="error-email">请输入有效的 Email 地址</span>
+          </div>
+
+          <div class="form-field form-field--full">
+            <label for="experience">你目前的投资经验是？<span class="req">*</span></label>
+            <select id="experience" name="experience" required>
+              <option value="" disabled selected>请选择</option>
+              <option value="完全没有经验（小白）">完全没有经验（小白）</option>
+              <option value="有一点理解，但没有实际投资">有一点理解，但没有实际投资</option>
+              <option value="已经开始投资（股票 / ETF / 其他）">已经开始投资（股票 / ETF / 其他）</option>
+              <option value="有几年的投资经验">有几年的投资经验</option>
+            </select>
+            <span class="field-error" id="error-experience">请选择您的投资经验</span>
+          </div>
+
+          <div class="form-field form-field--full">
+            <label for="goal">你想从这个分享会学到什么？<span class="req">*</span></label>
+            <textarea id="goal" name="goal" placeholder="请简单分享您的学习目标..." required></textarea>
+            <span class="field-error" id="error-goal">请分享您的学习目标</span>
+          </div>
+        </div>
+
+        <div class="register__submit">
+          <button type="submit" class="btn-primary" id="submitBtn">
+            <span class="spinner" id="submitSpinner" aria-hidden="true"></span>
+            <span id="submitLabel">提交报名</span>
+          </button>
+        </div>
+        <p class="register__privacy">您的资料将受到妥善保密，仅用于本次活动联系与确认。</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     Footer
+     ============================================================ -->
+<footer class="footer">
+  <div class="footer__inner">
+    <div class="footer__brand">
+      <img src="assets/logo.jpeg" alt="Cool Sir Edulife Academy logo" class="footer__logo">
+      <span class="footer__name">Cool Sir Edulife Academy</span>
+    </div>
+    <div class="footer__divider"></div>
+    <p class="footer__copy">© 2026 Cool Sir Edulife Academy. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<!-- ============================================================
+     Success Modal
+     ============================================================ -->
+<div class="modal-overlay" id="successModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+  <div class="modal">
+    <div class="modal__icon">
+      <svg viewBox="0 0 24 24" fill="none" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+    </div>
+    <h3 class="modal__title" id="modalTitle">报名成功 🎉</h3>
+    <p class="modal__body">感谢您的报名。<br>确认邮件已发送至您的邮箱。<br>我们将在活动前与您联系。</p>
+    <button class="modal__close" id="modalCloseBtn" type="button">返回首页</button>
+  </div>
+</div>
+
+<!-- Toast for errors -->
+<div class="toast" id="toast"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
