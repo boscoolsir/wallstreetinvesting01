@@ -13,19 +13,20 @@ A premium, fully responsive seminar registration landing page with Google Sheets
 | `style.css` | All styling — navy/gold/white premium theme, animations, full responsive layout |
 | `script.js` | Form validation, scroll animations, submission logic, success modal handling |
 | `Code.gs` | Google Apps Script backend — receives form data, writes to Google Sheets, sends confirmation email |
-| `assets/logo.jpeg` | Your Cool Sir Edulife Academy logo, used in the navbar, footer, and favicon |
+| `assets/logo.png` | Your Cool Sir Edulife Academy logo, used in the navbar, footer, and favicon |
 | `README.md` | This file |
 
 ---
 
 ## ✅ Step 0 — Logo
 
-Your real logo (`assets/logo.jpeg`) is already wired into the site — navbar, footer, and browser favicon. It's displayed inside a small white rounded "badge" in the navy navbar and footer so the black wordmark stays legible against the dark background.
+Your real logo (`assets/logo.png`) is already wired into the site — navbar, footer, and browser favicon. Since the original file had a lot of empty white space around the wordmark, it's been cropped to just the "Cool Sir / EDULIFE ACADEMY" text and displayed inside a white rounded rectangular badge (wider than tall, matching the logo's natural proportions) in the navy navbar and footer, so the black wordmark stays crisp and legible against the dark background.
 
 If you ever want to swap in a different version of the logo later (e.g. a transparent PNG, or an updated design):
 
-1. Replace `assets/logo.jpeg` with your new file (keep the same filename, or update the three references below if the filename changes).
+1. Replace `assets/logo.png` with your new file (keep the same filename, or update the three references below if the filename changes).
 2. The three places referencing it in `index.html` are: the favicon `<link>` tag in `<head>`, the navbar `<img id="brandLogo">`, and the footer `<img class="footer__logo">`.
+3. If your new logo has very different proportions (e.g. a square icon instead of a wide wordmark), you may want to adjust the badge dimensions in `style.css` under `.navbar__logo` and `.footer__logo` so it doesn't look squeezed or have excess empty space.
 
 ---
 
